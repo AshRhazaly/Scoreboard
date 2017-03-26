@@ -51,7 +51,10 @@ var Stopwatch = React.createClass({
   },
 
   onReset: function () {
-
+    this.setState({
+      elapsedTime: 0,
+      previousTime: Date.now(),
+    });
   },
 
   render: function () {
